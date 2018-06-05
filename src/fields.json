@@ -1,0 +1,61 @@
+[
+    {
+        "name": "Vertical",
+        "type": "select",
+        "options": ["News", "Opinion", "Sport", "Lifestyle", "Arts"]
+    },
+
+    {
+        "name": "Title",
+        "type": "text",
+        "default": "Headline for the box: Probably a series name"
+    },
+
+    {
+        "name": "Description",
+        "type": "textarea",
+        "default": "I am the description of the series. This should be short and not be too long. Otherwise people just won't read it."
+    },
+
+    {
+        "name": "Link 1 Headline",
+        "type": "text",
+        "default": "Headline for a story goes here"
+    },
+
+    {
+        "name": "Link 1 Url",
+        "type": "text",
+        "default": "https://www.theguardian.com/"
+    },
+
+    {
+        "name": "Link 2 Headline",
+        "type": "text",
+        "default": "Headline for a story goes here"
+    },
+
+    {
+        "name": "Link 2 Url",
+        "type": "text",
+        "default": "https://www.theguardian.com/"
+    },
+
+    {
+        "name": "Link 3 Headline",
+        "type": "text",
+        "default": "Headline for a story goes here"
+    },
+
+    {
+        "name": "Link 3 Url",
+        "type": "text",
+        "default": "https://www.theguardian.com/"
+    },
+
+    {
+        "name": "Read More Link",
+        "type": "text",
+        "default": "https://www.theguardian.com/"
+    }
+]

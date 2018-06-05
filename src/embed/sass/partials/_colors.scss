@@ -1,0 +1,27 @@
+@mixin colouriseEmbed($vertical, $c-color) {
+    .wrapper--#{$vertical} {
+        .title,
+        .link a {
+            color: $c-color;
+        }
+
+        .link:hover:after {
+            background-color: $c-color;
+            border-color: $c-color;
+        }
+
+        .button {
+            background-color: $c-color;
+
+            &:hover {
+                background-color: darken($c-color, 5%);
+            }
+        }
+    }
+}
+
+@include colouriseEmbed('news', $c-red);
+@include colouriseEmbed('opinion', $c-orange);
+@include colouriseEmbed('sport', $c-blue);
+@include colouriseEmbed('arts', $c-brown);
+@include colouriseEmbed('lifestyle', $c-purple);
