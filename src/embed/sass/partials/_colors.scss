@@ -1,7 +1,7 @@
 @mixin colouriseEmbed($vertical, $c-color) {
     .wrapper--#{$vertical} {
         .title,
-        .link a {
+        .links a {
             color: $c-color;
         }
 
