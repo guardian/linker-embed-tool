@@ -179,6 +179,10 @@
                             <input class='options__input' type='text' value='{{ default }}' name='{{ handlise name }}'>
                         {{/case}}
 
+                        {{#case 'checkbox'}}
+                            <input class='options__input' type='checkbox' name='{{ handlise name }}'>
+                        {{/case}}
+
                         {{#case 'textarea'}}
                             <textarea class='options__input options__input--textarea' name='{{ handlise name }}'>{{ default }}</textarea>
                         {{/case}}
@@ -213,7 +217,15 @@
 
         function buildDataObject() {
             $('.options__input').each(function(i, el) {
-                data[$(el).attr('name')] = $(el).val();
+                if ($(el).attr('type') == 'checkbox') {
+                    if ($(el).is(':checked')) {
+                        data[$(el).attr('name')] = true;
+                    } else {
+                        data[$(el).attr('name')] = false;
+                    }
+                } else {
+                    data[$(el).attr('name')] = $(el).val();
+                }
             });
         }
 
