@@ -112,6 +112,10 @@
             box-sizing: border-box;
         }
 
+        .options__input--checkbox {
+            margin: 0;
+        }
+
         .options__input--textarea {
             height: 200px;
         }
@@ -180,7 +184,7 @@
                         {{/case}}
 
                         {{#case 'checkbox'}}
-                            <input class='options__input' type='checkbox' name='{{ handlise name }}'>
+                            <input class='options__input options__input--checkbox' type='checkbox' name='{{ handlise name }}'>
                         {{/case}}
 
                         {{#case 'textarea'}}
