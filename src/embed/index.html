@@ -24,22 +24,28 @@
             <div class='header'>
                 <h1 class='title'>{{ title }}</h1>
             </div>
+            <div class='header--midterms'>
+                <img class='logo' src='https://interactive.guim.co.uk/embed/2018/09/midterm-logo/logo.svg'>
+                US<br /> midterms<br /> 2018
+            </div>
             <div class="content">
                 {{ description }}
             </div>
-            <ul class='links {{#if link-4-url}}links--4{{/if}}'>
-                {{#if link-1-url}}
-                    <a target='_parent' href='{{ link-1-url}}'><li class='link'>{{ link-1-headline }}</li></a>
-                {{/if}}
+            {{#if link-1-url}}
+                <ul class='links {{#if link-4-url}}links--4{{/if}}'>
+                    {{#if link-1-url}}
+                        <a target='_parent' href='{{ link-1-url}}'><li class='link'>{{ link-1-headline }}</li></a>
+                    {{/if}}
 
-                {{#if link-2-url}}
-                    <a target='_parent' href='{{ link-2-url}}'><li class='link'>{{ link-2-headline }}</li></a>
-                {{/if}}
+                    {{#if link-2-url}}
+                        <a target='_parent' href='{{ link-2-url}}'><li class='link'>{{ link-2-headline }}</li></a>
+                    {{/if}}
 
-                {{#if link-3-url}}
-                    <a target='_parent' href='{{ link-3-url}}'><li class='link'>{{ link-3-headline }}</li></a>
-                {{/if}}
-            </ul>
+                    {{#if link-3-url}}
+                        <a target='_parent' href='{{ link-3-url}}'><li class='link'>{{ link-3-headline }}</li></a>
+                    {{/if}}
+                </ul>
+            {{/if}}
 
             {{#if read-more-link}}
                 <a class='button' target='_parent' href='{{ read-more-link }}'>Read more</a>
@@ -58,7 +64,6 @@
             for (var i = 0; i < vars.length; i++) {
                 var pair = vars[i].split("=");
                     pair[1] = decodeURIComponent(pair[1]);
-
 
                 if (pair[1] === 'true' || pair[1] === 'false') {
                     pair[1] = JSON.parse(pair[1]);
