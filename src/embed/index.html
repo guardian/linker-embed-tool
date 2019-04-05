@@ -8,7 +8,7 @@
     <script src="https://interactive.guim.co.uk/libs/iframe-messenger/iframeMessenger.js"></script>
     <script>
         iframeMessenger.enableAutoResize();
-    </script> 
+    </script>
     <script type='text/javascript' src="./handlebars.min.js"></script>
 
     <link href="./style.css" rel="stylesheet" type="text/css">
@@ -27,6 +27,13 @@
             <div class='header--midterms'>
                 <img class='logo' src='https://interactive.guim.co.uk/embed/2018/09/midterm-logo/logo.svg'>
                 US<br /> midterms<br /> 2018
+            </div>
+            <div class='header--colourism'>
+                <img class='logo' src='https://interactive.guim.co.uk/embed/2019/04/colourism-assets/v2/assets.svg'>
+                <span>Shades of black</span>
+                <div class="header--colourism-content">
+                    {{ description }}
+                </div>
             </div>
             <div class="content">
                 {{ description }}
@@ -48,7 +55,7 @@
             {{/if}}
 
             {{#if read-more-link}}
-                <a class='button' target='_parent' href='{{ read-more-link }}'>Read more</a>
+                <a class='button' target='_parent' href='{{ read-more-link }}'>Read more <svg class='uit-icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'><path d='M38.65 25.58L37 27.21 26.79 37.44l-1.1-1.11 8.53-10.19H12.5v-2.28h21.72l-8.53-10.19 1.1-1.1L37 22.79l1.63 1.63v1.16z'/></svg></a>
             {{/if}}
         </div>
     </script>
