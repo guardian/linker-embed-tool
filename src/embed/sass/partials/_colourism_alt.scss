@@ -1,8 +1,8 @@
-.header--colourism{
+.header--colourism--alt{
     display: none;
 }
 
-.wrapper--colourism {
+.wrapper--colourism_alt {
     border-left: 1px solid #dcdcdc;
     border-right: 1px solid #dcdcdc;
 
@@ -12,8 +12,12 @@
     }
 
     .button {
-        background-color: #60546B;
-        margin-left: 10px;
+        background-color: #6b5840;
+        margin-left: 8px;
+
+        &:hover {
+            background-color: #a1845c
+        }
     }
 
     .content
@@ -22,7 +26,7 @@
         padding-right: 8px;
     }
 
-    .header--colourism-content {
+    .header--colourism_alt-content {
         max-width: 100%;
         position: relative;
         right: 0;
@@ -35,40 +39,45 @@
         line-height: 1.15em;
     }
 
-    .header--colourism {
+    .header--colourism--alt {
         display: block;
         font-family: 'Guardian Egyptian Web';
         font-size: 20px;
         line-height: 1;
         font-weight: 900;
         margin: 0;
+        min-height: 100px;
+        margin-top: -10px;
         background-color: #EFE1CD;
 
         span {
             position: absolute;
-            top: 40px;
-            left: 26px;
-            background-color: #121212;
-            color: #fff;
-            font-size: 32px;
+            top: 10px;
+            left: 10px;
+            color: #fbf6ef;
+            font-size: 30px;
+            font-weight: 700;
             padding: 4px;
-
-            @include mq(360px) {
-                left: 40px;
-                margin-top: 10px;
-                font-size: 36px;
-            }
+            max-width: 50%;
         }
     }
 
-    .logo {
-        max-width: 340px;
+    .paper {
+        max-width: 200px;
         display: block;
         margin-bottom: 6px;
-        //position: absolute;
+        position: absolute;
         overflow: visible;
-        margin-top: -10px;
+        left: 3px;
+        top: 0px;
         margin-bottom: 2px;
+    }
+    .logo {
+        max-height: 100px;
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: -4px;
     }
 
     .links {
@@ -95,12 +104,11 @@
         background-position: left top;
         background-repeat: repeat-x;
         font-family: 'Guardian Egyptian Web';
-        font-size: 17px;
+        font-size: 18px;
         padding-top: 6px;
         font-weight: 600;
-        color: #4E4557;
+        color: #6b5840;
         padding-left: 8px;
-        line-height: 1.2em;
 
         @include mq($until: mobile) {
             padding-bottom: 10px;
@@ -131,7 +139,7 @@
         margin: auto;
         display: block;
         transition: color 0.3s ease-out, background 0.3s ease-out, border 0.3s ease-out;
-        background-color: #D0BEBE;
+        background-color: #fbf6ef;
         margin-right: 8px;
 
         @include mq($until: mobile) {
