@@ -2,13 +2,13 @@
     display: none;
 }
 
-.header {
-    padding-top: 0px;
-}
-
 .wrapper--capitalism {
     border-left: 1px solid #dcdcdc;
     border-right: 1px solid #dcdcdc;
+
+    .header {
+        padding-top: 0px;
+    }
 
     .title
     {
