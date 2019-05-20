@@ -5,7 +5,11 @@
 }
 
 .wrapper--tint {
-    background-color: #fef9f5;
+    background-color: $c-tint;
+
+    &.wrapper--commerical {
+        background-color: $c-light-grey;
+    }
 }
 
 .header {
@@ -39,7 +43,7 @@
 }
 
 a.button {
-    background-color: #60546B;
+    background-color: $c-black;
     position: relative;
     display: inline-block;
     font-family: 'Guardian Sans Web';
@@ -66,11 +70,11 @@ a.button {
     top: 0;
     bottom: 0;
     height: 100%;
-    fill: #fff;
+    fill: $c-white;
     transition: transform 0.4s ease-out;
 }
 .button svg path{
-    fill: #fff;
+    fill: $c-white;
 }
 
 
