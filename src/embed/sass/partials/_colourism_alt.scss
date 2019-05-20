@@ -1,0 +1,156 @@
+.header--colourism--alt{
+    display: none;
+}
+
+.wrapper--colourism_alt {
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+
+    .title
+    {
+        display: none;
+    }
+
+    .button {
+        background-color: #6b5840;
+        margin-left: 8px;
+
+        &:hover {
+            background-color: #a1845c
+        }
+    }
+
+    .content
+    {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .header--colourism_alt-content {
+        max-width: 100%;
+        position: relative;
+        right: 0;
+        font-family: 'Guardian Egyptian Web';
+        font-weight: 600;
+        font-size: 16px;
+        padding-top: 0px;
+        padding-left: 3px;
+        padding-bottom:6px;
+        line-height: 1.15em;
+    }
+
+    .header--colourism--alt {
+        display: block;
+        font-family: 'Guardian Egyptian Web';
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 900;
+        margin: 0;
+        min-height: 100px;
+        margin-top: -10px;
+        background-color: #EFE1CD;
+
+        span {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fbf6ef;
+            font-size: 30px;
+            font-weight: 700;
+            padding: 4px;
+            max-width: 50%;
+        }
+    }
+
+    .paper {
+        max-width: 200px;
+        display: block;
+        margin-bottom: 6px;
+        position: absolute;
+        overflow: visible;
+        left: 3px;
+        top: 0px;
+        margin-bottom: 2px;
+    }
+    .logo {
+        max-height: 100px;
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: -4px;
+    }
+
+    .links {
+        margin-top: 0px;
+    }
+
+    .links a {
+        color: $c-black;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: $c-red;
+        }
+
+        &:last-of-type {
+            display: none;
+        }
+    }
+
+    .link {
+        border-top: 0;
+        background-image: linear-gradient(to right,#dcdcdc 50%,transparent 0);
+        background-size: 10px 1px;
+        background-position: left top;
+        background-repeat: repeat-x;
+        font-family: 'Guardian Egyptian Web';
+        font-size: 18px;
+        padding-top: 6px;
+        font-weight: 600;
+        color: #6b5840;
+        padding-left: 8px;
+
+        @include mq($until: mobile) {
+            padding-bottom: 10px;
+        }
+
+        &:hover {
+            background-color: #CFBEBE;
+        }
+    }
+
+    .link:after {
+        content: '';
+        background-image: url("data:image/svg+xml; utf8, <svg class='uit-icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'><path d='M38.65 25.58L37 27.21 26.79 37.44l-1.1-1.11 8.53-10.19H12.5v-2.28h21.72l-8.53-10.19 1.1-1.1L37 22.79l1.63 1.63v1.16z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: 0px;
+        background-size: auto;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        padding-left: 5px;
+        padding-top: 5px;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        bottom: 4px;
+        margin: auto;
+        display: block;
+        transition: color 0.3s ease-out, background 0.3s ease-out, border 0.3s ease-out;
+        background-color: #fbf6ef;
+        margin-right: 8px;
+
+        @include mq($until: mobile) {
+            top: 0;
+            right: 0;
+            bottom: 0px;
+        }
+
+    }
+}
+
+.header--midterms {
+    display: none;
+}
