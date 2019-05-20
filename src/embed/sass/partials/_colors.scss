@@ -25,4 +25,4 @@
 @include colouriseEmbed('sport', $c-blue);
 @include colouriseEmbed('arts', $c-brown);
 @include colouriseEmbed('lifestyle', $c-purple);
-@include colouriseEmbed('commercial', $c-teal);
+@include colouriseEmbed('commercial', darken($c-teal, 10%));
