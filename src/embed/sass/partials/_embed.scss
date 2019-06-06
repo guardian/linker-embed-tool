@@ -5,11 +5,11 @@
 }
 
 .wrapper--tint {
-    background-color: #fef9f5;
+    background-color: $c-tint;
 }
 
 .header {
-    padding-top: 4px;
+    padding-top: 3px;
 }
 
 .title {
@@ -39,7 +39,7 @@
 }
 
 a.button {
-    background-color: #60546B;
+    background-color: $c-black;
     position: relative;
     display: inline-block;
     font-family: 'Guardian Sans Web';
@@ -66,11 +66,11 @@ a.button {
     top: 0;
     bottom: 0;
     height: 100%;
-    fill: #fff;
+    fill: $c-white;
     transition: transform 0.4s ease-out;
 }
 .button svg path{
-    fill: #fff;
+    fill: $c-white;
 }
 
 
@@ -92,7 +92,7 @@ a.button {
 
     &:after {
         content: '';
-        background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path fill='#222' d='M22.8 14.6l-7.6-7.6-.7.7 5.5 6.6h-14v1.5h14l-5.5 6.6.7.7 7.6-7.6v-.9'/></svg>");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath fill='%23222' d='M22.8 14.6l-7.6-7.6-.7.7 5.5 6.6h-14v1.5h14l-5.5 6.6.7.7 7.6-7.6v-.9'/%3E%3C/svg%3E%0A");
         background-repeat: no-repeat;
         background-position: 0px;
         background-size: auto;
@@ -113,7 +113,7 @@ a.button {
     }
 
     &:hover:after {
-        background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path fill='#fff' d='M22.8 14.6l-7.6-7.6-.7.7 5.5 6.6h-14v1.5h14l-5.5 6.6.7.7 7.6-7.6v-.9'/></svg>");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath fill='%23fff' d='M22.8 14.6l-7.6-7.6-.7.7 5.5 6.6h-14v1.5h14l-5.5 6.6.7.7 7.6-7.6v-.9'/%3E%3C/svg%3E%0A");
         background-position: 2px;
     }
 

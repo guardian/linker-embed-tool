@@ -1,0 +1,10 @@
+.wrapper--commercial {
+    &.wrapper--tint {
+        background-color: $c-light-grey;
+    }
+
+    .title,
+    .link {
+        font-family: 'Guardian Sans Web';
+    }
+}
