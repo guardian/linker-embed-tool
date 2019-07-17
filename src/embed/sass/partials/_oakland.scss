@@ -1,14 +1,11 @@
-.header--capitalism {
+.header--oakland, .subtitle--oakland{
     display: none;
 }
 
-.wrapper--capitalism {
+
+.wrapper--oakland {
     border-left: 1px solid #dcdcdc;
     border-right: 1px solid #dcdcdc;
-
-    .header {
-        padding-top: 0px;
-    }
 
     .title
     {
@@ -16,17 +13,33 @@
     }
 
     .button {
-        background-color: #e05e00;
-        margin-left: 10px;
+        background-color: $c-black;
+        margin-left: 8px;
+        color: $c-white;
+
+        &:hover {
+            background-color: $c-yellow;
+            color: $c-black;
+        }
     }
 
     .content
     {
         padding-left: 8px;
         padding-right: 8px;
+
+        .subtitle--oakland {
+            display: block;
+            font-size: 21px;
+            font-weight: 300;
+            font-family: 'Guardian Egyptian Web';
+            line-height: 1.1em;
+            padding-bottom: 10px;
+            color: #333333;
+        }
     }
 
-    .header--capitalism-content {
+    .header--oakland-content {
         max-width: 100%;
         position: relative;
         right: 0;
@@ -39,59 +52,52 @@
         line-height: 1.15em;
     }
 
-    .header--capitalism {
+    .header--oakland {
         display: block;
         font-family: 'Guardian Egyptian Web';
         font-size: 20px;
         line-height: 1;
-        font-weight: 700;
+        font-weight: 900;
         margin: 0;
-        min-height: 100px;
-        background-color: #F2E7D5;
-        //position: absolute;
-
-        .logo_text {
-            position: absolute;
-            top: 14px;
-            left: 4px;
-
-        }
+        min-height: 170px;
+        position: relative;
+        margin-top: 0px;
+        background-color: #414141;
+        padding-top: 10px;
+        overflow: hidden;
 
         span {
-            display: block;
-            top: 0px;
-            left: 10px;
-            background-color: #121212;
-            color: #fff;
+            position: relative;
+            bottom: 0px;
+            left: 6px;
+            color: #ededed;
             font-size: 24px;
+            font-weight: 700;
             padding: 4px;
-            max-width: 180px;
-
-            @include mq(360px) {
-                left: 0px;
-                font-size: 28px;
-            }
-
-            &:first-of-type {
-                display: inline;
-            }
+            background-color: #414141;
+            //margin-right: 140px;
+            line-height: 1.2;
+            margin-top: 20px;
         }
     }
 
-    .logo_wrapper {
-        position: relative;
-    }
-
-    .logo {
-        max-height: 100px;
+    .paper {
+        max-width: 200px;
         display: block;
         margin-bottom: 6px;
         position: absolute;
         overflow: visible;
-        margin-top: 0px;
-        right: 10px;
+        left: 3px;
+        top: 0px;
         margin-bottom: 2px;
-        padding-top: 12px;
+    }
+    .logo {
+        max-width: 100%;
+        display: block;
+        left: 0px;
+        position: absolute;
+        margin-top: 40px;
+        bottom: -7px;
     }
 
     .links {
@@ -105,13 +111,6 @@
         &:hover {
             color: $c-red;
         }
-
-/*
-        &:last-of-type {
-            display: none;
-        }
-        */
-
     }
 
     .link {
@@ -124,16 +123,21 @@
         font-size: 18px;
         padding-top: 6px;
         font-weight: 600;
-        color: #e05e00;
+        color: #333333;
         padding-left: 8px;
-        line-height: 1.2em;
 
         @include mq($until: mobile) {
             padding-bottom: 10px;
         }
 
         &:hover {
-            background-color: #f9b376;
+            background-color: #ededed;
+
+
+            &:after {
+                background-color: $c-grey;
+                border: $c-black;
+            }
         }
     }
 
@@ -157,7 +161,7 @@
         margin: auto;
         display: block;
         transition: color 0.3s ease-out, background 0.3s ease-out, border 0.3s ease-out;
-        background-color: #f9b376;
+        background-color: #fbf6ef;
         margin-right: 8px;
 
         @include mq($until: mobile) {
@@ -165,7 +169,6 @@
             right: 0;
             bottom: 0px;
         }
-
     }
 }
 

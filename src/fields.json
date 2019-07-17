@@ -2,7 +2,7 @@
     {
         "name": "Vertical",
         "type": "select",
-        "options": ["News", "Opinion", "Sport", "Lifestyle", "Arts", "Commercial", "Midterms",  "Capitalism", "Colourism_Alt"]
+        "options": ["News", "Opinion", "Sport", "Lifestyle", "Arts", "Midterms",  "Capitalism", "Colourism_Alt", "Oakland", "Plastic"]
     },
 
     {
